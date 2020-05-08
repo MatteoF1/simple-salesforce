@@ -286,7 +286,7 @@ To retrieve large amounts of data, use
     # the generator provides the results list for every call
     all_results = []
     for list_results in fetch_results:
-      all_results.update(list_results)
+      all_results.extend(list_results)
 
 Query all records:
 
@@ -310,7 +310,7 @@ To retrieve large amounts of data, use
     # the generator provides the results list for every call
     all_results = []
     for list_results in fetch_results:
-      all_results.update(list_results)
+      all_results.extend(list_results)
 
 Delete records (soft deletion):
 
