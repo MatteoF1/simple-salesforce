@@ -283,7 +283,7 @@ To retrieve large amounts of data, use
     # generator on the results page
     fetch_results = sf.bulk.Account.query(query, lazy_operation=True)
 
-    # the generator provides the results list for every call
+    # the generator provides the list of results for every call to next()
     all_results = []
     for list_results in fetch_results:
       all_results.extend(list_results)
@@ -307,7 +307,7 @@ To retrieve large amounts of data, use
     # generator on the results page
     fetch_results = sf.bulk.Account.query_all(query, lazy_operation=True)
 
-    # the generator provides the results list for every call
+    # the generator provides the list of results for every call to next()
     all_results = []
     for list_results in fetch_results:
       all_results.extend(list_results)
